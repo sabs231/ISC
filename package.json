@@ -1,0 +1,10 @@
+{
+	"name" : "isc",
+	"description" : "ITESM CQ informative home site",
+	"version" : "0.0.1",
+	"private" : true,
+	"dependencies" : {
+		"express" : "3.4.0",
+		"jade" : "*"
+	}
+}
