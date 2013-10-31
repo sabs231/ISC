@@ -1,0 +1,50 @@
+#isc_img
+ {
+	 max-width: 100%;
+	 height: auto;
+	 display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+ }
+
+ body
+  {
+		min-height: 100px;
+		background-color: #33CCFF;
+	}
+
+.navbar-default
+ {
+	 background-color: #4CA3BF;
+	 border-color: #33CCFF;
+ }
+
+.navbar-default
+.navbar-brand
+ {
+	 color: #FFFFFF;
+ }
+
+.navbar-default
+.navbar-nav > li > a
+ {
+	 color: #FFFFFF;
+ }
+
+.navbar-default
+.navbar-brand:hover,
+.navbar-default
+.navbar-brand:focus
+ {
+	 background-color: rgba(0, 0, 0, 0);
+	 color: #1181A6;
+ }
+
+.navbar-default
+.navbar-nav > li > a:hover,
+.navbar-default
+.navbar-nav > li > a:focus
+ {
+	 background-color: rgba(0, 0, 0, 0);
+	 color: #1181A6;
+ }
