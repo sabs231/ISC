@@ -1,13 +1,16 @@
 var express = require('express');
+var routes = require('./routes');
 var app = express();
 
 app.configure(function () {
 	//app.set('view engine', 'jade');
-	//app.set('views', __dirname + '/views');
+	app.set('views', __dirname + '/views');
+	app.set("view options",  {layout: false});
+	app.engine('html', require('ejs').renderFile);
 	app.use(express.logger());
 	app.use(express.bodyParser());
 	app.use(express.cookieParser());
-	app.use(express.static(__dirname + '/views'));
+//	app.use('/views', express.static(__dirname + '/views'));
 	app.use('/scripts', express.static(__dirname + '/scripts'));
 	app.use('/css', express.static(__dirname + '/css'));
 	app.use('/img', express.static(__dirname + '/img'));
@@ -15,10 +18,7 @@ app.configure(function () {
 	app.use(app.router);
 });
 
-app.get("/", function(request, response){
-	//response.render("index", { message : "THIS IS ISC!", pageTitle: "Ingeniero en Sistemas Computacionales"});
-	response.sendfile('index.html');
-});
+app.get('/', routes.index);
+app.get('/locations', routes.locations);
 
 app.listen(8888);
-

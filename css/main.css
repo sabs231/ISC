@@ -48,3 +48,14 @@
 	 background-color: rgba(0, 0, 0, 0);
 	 color: #1181A6;
  }
+
+.navbar-default
+.navbar-nav > .active > a,
+.navbar-default
+.navbar-nav > .active > a:hover,
+.navbar-default
+.navbar-nav > .active > a:focus
+ {
+	 background-color: #33CCFF;
+	 color: #1181A6;
+ }
