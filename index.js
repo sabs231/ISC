@@ -15,6 +15,7 @@ app.configure(function () {
 	app.use('/css', express.static(__dirname + '/css'));
 	app.use('/img', express.static(__dirname + '/img'));
 	app.use('/fonts', express.static(__dirname + '/fonts'));
+	app.use('/video', express.static(__dirname + '/video'));
 	app.use(app.router);
 });
 
