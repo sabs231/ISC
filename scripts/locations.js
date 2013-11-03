@@ -4,9 +4,8 @@ google.maps.visualRefresh = true;
 var mexico_location = new google.maps.LatLng(19.433, -99.133);
 var gdl_location = new google.maps.LatLng(20.667, -103.35);
 var content_video = '<div id="gdl_video">' +
-											'<video width="320" height="240" controls>' +
-												'<source src="video/test.mp4" type="video/mp4">' +
-											'</video>' +
+											'<iframe id="player" type="text/html" width="640" height="390" src="http://www.youtube.com/embed/2K9gjhbT7xs?enablejsapi=1" frameborder="0">' +
+											'</iframe>'
 										'</div>';
 var info_window = new google.maps.InfoWindow({
 	content: content_video

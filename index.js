@@ -21,5 +21,8 @@ app.configure(function () {
 
 app.get('/', routes.index);
 app.get('/locations', routes.locations);
+app.get('/about', routes.about);
+app.get('/contact', routes.contact);
+app.get('/studyplan', routes.studyplan);
 
 app.listen(8888);

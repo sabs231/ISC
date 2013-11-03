@@ -13,25 +13,7 @@
 		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/navbar-static-top.css" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
-		<style type="text/css">
-			html
-			 {
-				 height: 100%;
-			 }
-			 body
-			  {
-					margin: 0;
-					padding: 0;
-				}
-				#map-canvas
-				 {
-					 height: 85%;
-				 }
-		</style>
 
-		<script type="text/javascript"
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAnScrGElTeCgCv5GyicUnUgfWbN7FCS2A&sensor=false">
-		</script>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -43,6 +25,7 @@
 	</head>
 
 	<body>
+
 		<!-- Static navbar -->
 		<div class="navbar navbar-default navbar-static-top">
 			<div class="container">
@@ -56,8 +39,8 @@
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="/locations">ISCs Location</a></li>
-						<li><a href="/about">About</a></li>
+						<li><a href="/locations">ISCs Location</a></li>
+						<li class="active"><a href="/about">About</a></li>
 						<li><a href="/contact">Contact</a></li>
 						<li><a href="/studyplan">Study Plan</a></li>
 					</ul>
@@ -66,7 +49,6 @@
 		</div>
 
 		<div class="container">
-			<div id="map-canvas"/>
 		</div> <!-- /container -->
 
 		<!-- Bootstrap core JavaScript
@@ -74,6 +56,5 @@
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="scripts/bootstrap.min.js"></script>
-		<script src="scripts/locations.js"></script>
 	</body>
 </html>
